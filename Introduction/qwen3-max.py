@@ -11,7 +11,7 @@ client = OpenAI(
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
-messages = [{"role": "user", "content": "介绍 langchain 框架"}]
+messages = [{"role": "user", "content": "一句话说出目前 ChatGTP-plus 订阅一个月多少$？"}]
 completion = client.chat.completions.create(
     model="qwen3-max",  # 您可以按需更换为其它深度思考模型
     messages=messages,
