@@ -17,3 +17,4 @@ chain = prompt | model | parser | model
 
 res: AIMessage = chain.invoke({"lastname": "张", "gender": "女儿"})
 print(res.content)
+print(type(res))
