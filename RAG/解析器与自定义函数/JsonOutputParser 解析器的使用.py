@@ -20,7 +20,7 @@ second_prompt = PromptTemplate.from_template(
     "姓名：{name}，请帮我解析含义。"
 )
 
-# 构建链  (AIMessage({"name": 张若曦}))
+# 构建链  (AIMessage({"name": 张XX}))
 chain = first_prompt | model | json_parser | second_prompt | model | str_parser
 
 for chunk in chain.stream({"lastname": "张", "gender": "女儿"}):
