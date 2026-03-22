@@ -20,7 +20,7 @@ embedding = DashScopeEmbeddings(model="text-embedding-v4")
 
 # 初始化 FAISS
 vector_store = FAISS.from_texts(
-    texts=["初始化数据"],   # 👈 必须至少一条
+    texts=["初始化数据"],
     embedding=embedding
 )
 
