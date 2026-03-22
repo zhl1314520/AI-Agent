@@ -56,6 +56,7 @@ prompt:
   - 输出：完整的提示词                   PromptValue
 """
 chain = (
+    # invoke首先进入 retriever，但是RunnablePassthrough会分流一部分。所以是invoke会同时进入retriever和 input 里面
     {"input": RunnablePassthrough(), "context": retriever | format_func}
     | prompt
     | print_prompt
