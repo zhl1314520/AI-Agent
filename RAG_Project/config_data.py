@@ -17,3 +17,10 @@ similarity_threshold = 1    # 检索返回匹配度的数量
 
 embedding_model_name = "text-embedding-v4"
 chat_model_name = "qwen3-max"
+
+# session_id 配置
+session_config = {
+        "configurable": {
+            "session_id": "user_001",
+        }
+    }
