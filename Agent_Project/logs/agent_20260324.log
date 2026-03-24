@@ -1,0 +1,68 @@
+2026-03-24 12:21:06,217 - agent - ERROR - prompt_loader.py:29 - [load_rag_prompts]解析RAG提示词出错，[Errno 2] No such file or directory: 'D:\\PyCharm\\Project\\agent\\agentProject\\Agent_Project\\prompts/rag_summarize.txt'
+2026-03-24 12:21:44,992 - agent - ERROR - prompt_loader.py:29 - [load_rag_prompts]解析RAG提示词出错，[Errno 2] No such file or directory: 'D:\\PyCharm\\Project\\agent\\agentProject\\Agent_Project\\prompts/rag_summarize.txt'
+2026-03-24 12:24:50,589 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-24 12:24:50,591 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 给我生成我的使用报告
+2026-03-24 12:24:56,488 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_id
+2026-03-24 12:24:56,488 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-24 12:24:56,490 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_id调用成功
+2026-03-24 12:24:56,490 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-24 12:24:56,490 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 1005
+2026-03-24 12:24:59,836 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_current_month
+2026-03-24 12:24:59,836 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-24 12:24:59,838 - agent - INFO - middleware.py:24 - [tool monitor]工具get_current_month调用成功
+2026-03-24 12:24:59,839 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-24 12:24:59,840 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 2025-04
+2026-03-24 12:25:03,732 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fill_context_for_report
+2026-03-24 12:25:03,732 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-24 12:25:03,732 - agent - INFO - middleware.py:24 - [tool monitor]工具fill_context_for_report调用成功
+2026-03-24 12:25:03,733 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-24 12:25:03,733 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-03-24 12:25:07,581 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：fetch_external_data
+2026-03-24 12:25:07,581 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'user_id': '1005', 'month': '2025-04'}
+2026-03-24 12:25:07,585 - agent - INFO - middleware.py:24 - [tool monitor]工具fetch_external_data调用成功
+2026-03-24 12:25:07,586 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有9条消息。
+2026-03-24 12:25:07,586 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | {"特征": "120㎡ | 老人 | 防滑砖", "效率": "手动操作占比:85%\\n定时清扫使用率:5次/周", "耗材": "电池衰减:28%\\n水箱使用率:50%", "对比": "语音控制功能已安装+操作熟练度提升"}
+2026-03-24 12:25:11,537 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-24 12:25:11,537 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人电池保养和维护建议'}
+2026-03-24 12:25:16,133 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-24 12:25:16,135 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有11条消息。
+2026-03-24 12:25:16,135 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人电池保养和维护建议包括：避免长时间过度充电，建议在电量剩余20%左右时充电；长期不使用时应将电池电量保持在50%左右并断开电源；定期清洁机器人底部及充电触点，确保充电接触良好；避免在高温或潮湿环境中充电和存放；若长时间不用，建议每月充电一次以维持电池活性。
+2026-03-24 12:25:20,433 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-24 12:25:20,433 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人水箱清洁和维护方法'}
+2026-03-24 12:25:24,133 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-24 12:25:24,135 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有13条消息。
+2026-03-24 12:25:24,135 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人水箱清洁和维护方法包括：每次使用后倒掉剩余清水并晾干；定期用软布或软刷清洗水箱内壁，避免使用腐蚀性清洁剂；检查并清理水箱出水口，防止堵塞；长期不用时保持水箱干燥存放。
+2026-03-24 12:25:27,949 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-24 12:25:27,949 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人在防滑砖地面的使用技巧'}
+2026-03-24 12:25:35,585 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-24 12:25:35,588 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有15条消息。
+2026-03-24 12:25:35,588 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 在防滑砖地面使用扫地机器人时，应确保地面无明显水渍或油污，避免因湿滑导致打滑或清洁效果下降；部分防滑砖表面凹凸纹理较深，建议选择越障能力强、吸力适中的机型，并定期清理滚刷以防缠绕；若地面过于粗糙，可考虑关闭拖地功能，仅使用扫地模式以提升效率和保护设备。
+2026-03-24 12:27:14,966 - agent - INFO - vector_store.py:99 - [加载知识库]D:\PyCharm\Project\agent\agentProject\Agent_Project\data\扫地机器人100问.pdf 内容加载成功
+2026-03-24 12:27:21,506 - agent - INFO - vector_store.py:99 - [加载知识库]D:\PyCharm\Project\agent\agentProject\Agent_Project\data\扫地机器人100问2.txt 内容加载成功
+2026-03-24 12:27:28,279 - agent - INFO - vector_store.py:99 - [加载知识库]D:\PyCharm\Project\agent\agentProject\Agent_Project\data\扫拖一体机器人100问.txt 内容加载成功
+2026-03-24 12:27:40,117 - agent - INFO - vector_store.py:99 - [加载知识库]D:\PyCharm\Project\agent\agentProject\Agent_Project\data\故障排除.txt 内容加载成功
+2026-03-24 12:27:47,660 - agent - INFO - vector_store.py:99 - [加载知识库]D:\PyCharm\Project\agent\agentProject\Agent_Project\data\维护保养.txt 内容加载成功
+2026-03-24 12:27:54,115 - agent - INFO - vector_store.py:99 - [加载知识库]D:\PyCharm\Project\agent\agentProject\Agent_Project\data\选购指南.txt 内容加载成功
+2026-03-24 12:44:54,417 - agent - INFO - logger_handler.py:53 - 信息日志
+2026-03-24 12:44:54,420 - agent - ERROR - logger_handler.py:54 - 错误日志
+2026-03-24 12:44:54,422 - agent - WARNING - logger_handler.py:55 - 警告日志
+2026-03-24 12:44:54,422 - agent - DEBUG - logger_handler.py:56 - 调试日志
+2026-03-24 13:18:53,678 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-24 13:18:53,679 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 在我城市当前天气下，机器人如何让保养
+2026-03-24 13:19:00,664 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-03-24 13:19:00,667 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-24 13:19:00,668 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-03-24 13:19:00,705 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-24 13:19:00,707 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 合肥
+2026-03-24 13:19:04,735 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-03-24 13:19:04,739 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '合肥'}
+2026-03-24 13:19:04,744 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-03-24 13:19:05,319 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-24 13:19:05,321 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 城市合肥天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-03-24 13:19:15,020 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-24 13:19:15,022 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '晴天低湿度环境下扫地机器人保养方法'}
+2026-03-24 13:19:18,489 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-24 13:19:18,828 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-24 13:19:18,830 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 参考资料中未提及晴天低湿度环境下扫地机器人的具体保养方法。
+2026-03-24 13:19:48,452 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-24 13:19:48,452 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | ok
